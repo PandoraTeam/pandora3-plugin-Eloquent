@@ -11,6 +11,9 @@
 			"role": "Developer"
 		}
 	],
+	"require": {
+		"illuminate/database": "~5.7.17"
+	},
 	"extra": {
 		"installer-name": "Eloquent"
 	}
