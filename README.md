@@ -1,2 +1,3 @@
-# pandora3-plugin-Eloquent
-Eloquent database ORM plugin for Pandora 3
+# Pandora 3 - Eloquent plugin
+
+Provides support for Eloquent database ORM
