@@ -1,0 +1,17 @@
+{
+	"name": "pandora3/plugin-eloquent",
+	"type": "pandora3-plugin",
+	"description": "Pandora 3: Plugin Eloquent",
+	"homepage": "https://github.com/PandoraTeam/pandora3-plugin-Eloquent",
+	"authors": [
+		{
+			"name": "Petr Gostin",
+			"email": "nescafe238@gmail.com",
+			"homepage": "http://u-238.ru",
+			"role": "Developer"
+		}
+	],
+	"extra": {
+		"installer-name": "Eloquent"
+	}
+}
