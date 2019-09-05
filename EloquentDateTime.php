@@ -24,7 +24,17 @@ trait EloquentDateTime {
 	 * @return Date|null
 	 */
 	protected function asDate($value): ?Date {
-		return Date::createFromFormat(Date::FormatMysql, $value);
+		if (is_null($value)) {
+			return null;
+		}
+		if ($value instanceof \DateTimeInterface) {
+			return new Date($value, $value->getTimezone());
+		}
+		if ($this->isStandardDateFormat($value)) {
+			return Date::createFromFormat(Date::FormatMysql, $value);
+		}
+		$format = $this->getDateFormat();
+		return Date::createFromFormat($format, $value);
 	}
 	
 	/**
