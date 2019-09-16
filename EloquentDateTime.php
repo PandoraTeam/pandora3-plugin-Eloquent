@@ -4,6 +4,10 @@ namespace Pandora3\Plugins\Eloquent;
 use Pandora3\Libs\Time\Date;
 use Pandora3\Libs\Time\DateTime;
 
+/**
+ * Trait EloquentDateTime
+ * @package Pandora3\Plugins\Eloquent
+ */
 trait EloquentDateTime {
 	
 	/**
