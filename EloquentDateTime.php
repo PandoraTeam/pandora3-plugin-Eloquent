@@ -16,11 +16,11 @@ trait EloquentDateTime {
 	public function getValues(): array {
 		$results = [];
 
-        foreach (array_keys($this->getAttributes()) as $attribute) {
-            $results[$attribute] = $this->getAttribute($attribute);
-        }
+		foreach (array_keys($this->getAttributes()) as $attribute) {
+			$results[$attribute] = $this->getAttribute($attribute);
+		}
 
-        return $results;
+		return $results;
 	}
 	
 	/**
